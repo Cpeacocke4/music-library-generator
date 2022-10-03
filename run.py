@@ -90,3 +90,37 @@ def view_library():
 
     rep_msg = 'Would you like to return to the menu?'
     repeat("view", rep_msg, view_library)
+
+
+def add_song():
+
+    """
+    Request song input from user, detailing song title,
+    artist and genre.
+    Check input validity.
+    Add new song to sheet and order alphabetically.
+    """
+    clear_screen()
+
+    while True:
+        print('''Please enter your song separated with commas
+         as shown: Song Title, Artist, Genre\n''')
+        song_str = input("Enter your song here:\n")
+        song_input = str(song_str.replace(', ', ',')).lower().split(",")
+        if len(song_input) != 3:
+            print('''You did not provide enough information,
+            please enter your information as follows:
+            Song Title, Artist, Genre.\n''')
+            continue
+        if song_input[0] in songs:
+            print('''That song already exists in your library,
+            please add a new song.\n''')
+            continue
+        print(f'You added {song_input}, thank you for your input!\n')
+        library.append_row(song_input)
+        print('Updating library, please wait...\n')
+        print('Library successfully updated!')
+        break
+
+    rep_msg = 'Would you like to add another song?'
+    repeat("add", rep_msg, add_song)
