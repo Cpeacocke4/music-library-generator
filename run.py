@@ -155,3 +155,54 @@ def delete_song():
 
     rep_msg = 'Would you like to delete another entry?'
     repeat("delete", rep_msg, delete_song)
+
+
+def update_song():
+    """
+    Find song, artist and genre in library and update with user input.
+    """
+    clear_screen()
+
+    print('''If you would like to update an entry,
+    please type in the song name below.\n''')
+
+    while True:
+        song_to_update = input("Enter song name here:\n")
+        current_songs = []
+        for song in songs:
+            current_songs.append(song)
+        if song_to_update.lower() == '':
+            print('Your input was invalid, please try again.\n')
+            continue
+        if song_to_update.lower() not in current_songs:
+            print('''The song you suggested does not exist
+            in your library, please request another song.\'n''')
+            continue
+        print(f'You requested to update {song_to_update}.')
+
+        if song_to_update.lower() in songs:
+            cell = library.find(song_to_update.lower())
+            row_to_update = library.row_values(cell.row)
+            print(row_to_update)
+            library.delete_rows(cell.row)
+            print('''\nPlease enter your update
+            separated with commas as follows:
+            Song Title, Artist, Genre''')
+            while True:
+                update_input = input('\nEnter your update here:\n')
+                updated_row = str(update_input.replace(', ',
+                                                       ',')).lower().split(",")
+                if update_input.lower() == '':
+                    print('Your input was invalid, please try again.\n')
+                    continue
+                if len(updated_row) != 3:
+                    print('''You did not provide enough information,
+                    please try again.\n''')
+                    continue
+                library.append_row(updated_row)
+                print(f'\nYou updated {row_to_update} to {updated_row}!')
+                break
+        break
+    rep_msg = 'Would you like to update another entry?'
+
+    repeat("update", rep_msg, update_song)
