@@ -1,31 +1,91 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Music Library Generator
+The Music Library Generator is a command-line application built to allow the user to create and manipulate a library of music, detailing song, artist and genre.
 
-Welcome Cpeacocke4,
+This application is targeted towards a user who would like to compile, organise and easily access a music library of their choice.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Welcome to [The Music Library Generator](https://cpeacocke4.github.io/avatar-quiz/)
 
-## Reminders
+![Mock-up of The Ultimate Avatar Quiz on various devices](assets/README-images/mock-up.png)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## **Contents** 
 
-## Creating the Heroku app
+* [UX](#ux)
+* [Features](#current-features)
+* [Future Features](#future-features)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
+* [Acknowledgements](#acknowledgements)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## **UX**
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### **User Stories**
+* As a user I want to understand the purpose of the application upon arrival.
+* As a user I want easily understand how to navigate the program.
+* As a user I want to be able to create a library and interact with that library in a clear and simple manner.
+* As a user I want to be able to manipulate the data in a simple manner.
+* As a user I want to have a clean and concise experience of the application.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+### **Structure**
+The Music Library Generator is structured using functions and loops that access data stored within a Google Sheet, and allow the user to manipulate this data using text based commands. Upon every manipulation from the user the data within the Google Sheet is updated and the user is able to access and see their updated library. 
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+[Back to Top](#the-music-library-generator)
 
-Connect your GitHub repository and deploy as normal.
+## **Features** 
+The Music Library Generator contains 6 main features that are desplayed within a menu. These features are:
+* View Library
+* Add Song
+* Delete Song
+* Update Entry
+* Search Library
+* Close Program 
 
-## Constraints
+Upon completion of every function, the user is asked whether they would like to repeat that function or return to the menu. 
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### **Menu**
 
------
-Happy coding!
+* The menu was created to clearly and simply define the functionalities available to the user, and request an input from the user to choose between the 6 menu items. Upon user input the function to run the respective menu item is called.
+
+![Screenshot of nav bar](assets/README-images/logo.png) 
+
+### • **View Library** 
+* The View Library function allows the user to see the existing library of music in an alphabetically ordered, clear and neatly layed out format.
+
+
+![Screenshot of hero image](assets/README-images/welcome-screen.png)
+
+### • **Add Song** 
+* The add song function requests 3 fields of input from the user: song, artist, and genre. It validates the input by checking for the correct number of input fields, and whether the input already exists within the library. Upon succesful validation the input is then updated to the library, and the user is notified.
+
+
+![Screenshot of ethos section](assets/README-images/question-screen.png)
+
+### • **Delete Song** 
+* The delete song function requests input from the user detailing the song they would like to delete. It validates the input by checking whether the song exists within the library already, and whether there is input present. Upon succesful validation the entry is deleted from the library, and the user is notified.
+
+![Screenshot of times section](assets/README-images/result-screen.png)
+
+### • **Update Entry** 
+
+* The Update entry function requests input from the user detailing the song they would like to update. It validates the input by checking whether the song exists within the library, and whether there is input present. Upon succesful validation the row with the song, artist and genre is accessed and printed for the user, and the user is asked to input the update in 3 fields, song, artist and genre. Upon succesful validation of the second input, the library is updated and the user is notified.
+
+### • **Search** 
+
+* The Search function requests input from the user detailing either a song, genre or artist. It validates the input by checking whether the input exists within the library, and whether there is any input present. Upon succesful validation the search results are printed in a clear and organised format for the user.
+
+### • **Close Program** 
+
+* The Close Program function prints a goodbye message and closes the program upon the users request.
+
+### • **Input Validation**
+
+* All input is validated and checked for empty input fields, insufficient input, and respectively whether the input is present, or is not present within the data.
+
+## **Future Features**
+The Music Library Generator has many possibilities for future features, including:
+* The ability to create albums.
+* The ability to create playlists based off of genre or artist.
+* A detailed report of the library including percentages of genres present, eg: '60% pop, 20% jazz and 20% classical'.
+
+[Back to Top](#the-music-library-generator)
