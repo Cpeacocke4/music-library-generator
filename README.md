@@ -89,3 +89,94 @@ The Music Library Generator has many possibilities for future features, includin
 * A detailed report of the library including percentages of genres present, eg: '60% pop, 20% jazz and 20% classical'.
 
 [Back to Top](#the-music-library-generator)
+
+## **Technologies Used** 
+
+* [Python](https://www.python.org/) - Usedto create the entirety of the program.
+* [Heroku](https://dashboard.heroku.com/login) - Used to deploy the program.
+* [Gitpod](https://www.gitpod.io/#get-started) - Used to code and edit the program.
+* [Github](https://github.com/) - Used to store the repositry.
+* [Google Sheets](https://www.google.com/sheets/about/) - Used to store and access data.
+
+[Back to Top](#the-music-library-generator)
+
+## **Testing** 
+The site has been extensively tested on both the Gitpod terminal and the Heroku terminal, and found to have minimal to no errors in its structure, styling, and functionality. 
+
+### • **Code Validation**
+All code has been run through the [PEP8 python checker](https://www.pythonchecker.com/).
+
+* The check came back with a 100% success rate.
+
+PEP8 validation result: 
+![Screenshot of PEP8 validation result](/README_media/validation.png)
+
+
+### • **Bugs** 
+#### **Fixed Bugs** 
+During the creation of this program few bugs were encountered, and they are listed below:
+
+* Issue with input while loop within the menu function. The loop would continue even after the user had submitted valid input. This bug was solved by moving the 'break' keyword to the correct position within the code.
+
+#### **Unfixed Bugs**
+There are no unfixed bugs within the program.
+
+## **Deployment** 
+This is a guide on how to deploy a project via Heroku.
+Credit for this explanation goes to [Matthew Hurrel](https://github.com/Matthew-Hurrell/labyrinth-of-riddles)
+
+* Type "pip3 freeze > requirements.txt" into your terminals command line to create a list of dependencies. These will be in the requirements.txt file for heroku to intall before starting the application.
+* Push these changes up to GitHub.
+* Open Heroku on the web browser and login or create an account.
+* Once the account is open/created, click the "New" button in the top right hand corner and then click "Create new app" from the dropdown menu.
+* Enter an app name (this has to be unique on Heroku) and choose the local region in the dropdown box below. 
+* Click the "Create app" button.
+* When the app dashboard is open go to "Settings" in the menu bar. Find the "Config Vars" section and click the "Reveal Config Vars" button. Any sensitive information not sent to GitHub, that is required for the running of the app, must be entered manually in this section. Any protected .json files need to be entered here. Go back to the project and copy all the data in the .json file. Paste the data into the "Value" field. In the "Key" field enter "CREDS" in all capitals. Then click the "Add" button.
+* For projects using the Code Institute terminal, another Config Var needs to be added into this section. Enter "PORT" in all capitals into the "Key" field and "8000" into the "Value" field and click the "Add" button.
+* For projects using Python, scroll down to the "Buildpacks" section below. Click the "Add buildpack" button and select the "Python" option from the pop up window. Click the "Save Changes" button to exit the window.
+* For projects that use the Code Insitute terminal, repeat the process and click the "Add buildpack" button again and select the "Nodejs" option from the pop-up window. Click the "Save Changes" button to exit the window.
+* Check the order of the buildpacks in the buildpacks section. Ensure that Python is above Nodejs. If it isn't, click and drag the Python bar using the three-line icons until it is top of the list.
+* Scroll up to the top of the page and click the "Deploy" tab on the main app menu.
+* When the deployment page opens, scroll down to the "Deployment method" section and click and select the "GitHub" option to connect Heroku to the repository on GitHub. Scroll down and click the "Connect to GitHub" button. Log into GitHub in the pop-up window if required, otherwise this should be done automatically.
+* In the "Connect to GitHub" section enter the repository name into the repo-name field and click the "Search" button. The repository name should appear below the field. Click the "Connect" button to connect the GitHub repository to Heroku.
+* If the last step was successful the "Deploy" page should change. Scroll down the page to the "Automatic deploys" and "Manual deploy" sections. To enable automatic deploys with each new GitHub push click the "Enable Automatic Deploys" button. To manually deploy click the "Deploy branch" button in the "Manual deploy" section. Ensure the "main"/"master" branch is selected from the drop down menus for both of these options if that is the latest branch of the project.
+* If deployment is successful a prompt should appear with a "View" button to view the deployed app. Click the button to view the app deployment.
+
+#### **Fork this repository**
+To fork this repository follow the instructions below:
+
+* Log-in to GitHub and locate this repository.
+* On the top right of the page is a button called 'Fork', click on the button to create a copy of this repository in your GitHub Account.
+
+#### **Clone this project** 
+To make a local clone of this project follow these steps:
+
+* On the repository page, click the **Code** tab.
+* In the HTTPS section, click on the clipboard to copy the sites URL.
+* In your own personal IDE, open **Git Bash**.
+* Type in 'git clone' and paste in the URL copied from this repository.
+* Click enter and your clone will be created!
+
+[Back to Top](#the-music-library-generator)
+
+## **Credits**
+In this section all code that was referenced from external sources will be credited.
+#### • **Code**
+
+* Code connecting the google sheets API to the run.py file was referenced from the [Code Institute](https://codeinstitute.net/se/) Love Sandwiches Project
+* Code to clear the screen was sourced from [this website[](https://teamtreehouse.com/community/using-a-clearscreen-in-pycharm)
+* Typeography for the heading was sourced from [this website](http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=The%20music%0Alibrary%0Agenerator%0A)
+
+[Back to Top](#the-music-library-generator)
+
+## **Acknowledgements**
+The site was completed as a portfolio project for the Full Stack Software Developer Diploma at [Code Institute](https://codeinstitute.net/se/). 
+
+I would like to thank all those who were involved in supporting me through this project and guiding me along the way:
+
+* My [Code Institute](https://codeinstitute.net/se/) mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/).
+* The [Code Institute](https://codeinstitute.net/se/) Slack community.
+
+Christy Peacocke 2022.
+
+[Back to Top](#the-music-library-generator)
