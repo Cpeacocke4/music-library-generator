@@ -206,3 +206,34 @@ def update_song():
     rep_msg = 'Would you like to update another entry?'
 
     repeat("update", rep_msg, update_song)
+
+
+def search():
+    """
+    Find song, artist and genre and print all relevant answers for user.
+    """
+    clear_screen()
+
+    list_of_lists = library.get_all_values()
+    library_list = [item for list in list_of_lists for item in list]
+
+    while True:
+        search_input = input('''Please enter the song, artist or genre
+        you are looking for below:\n''')
+        cell_list = library.findall(search_input.lower())
+        if search_input == '':
+            print('Your input was invalid, please try again.\n')
+            continue
+        if search_input.lower() not in library_list:
+            print('''Your search does not exist in the library,
+            please try again.\n''')
+            continue
+        search_result = []
+        for items in cell_list:
+            search_result.append(library.row_values(items.row))
+        print(tabulate(search_result,
+                       headers=['Song Title', 'Artist', 'Genre']))
+        break
+
+    rep_msg = 'Would you like to search for something else?'
+    repeat("repeat", rep_msg, search)
