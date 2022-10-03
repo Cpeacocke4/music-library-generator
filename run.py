@@ -237,3 +237,29 @@ def search():
 
     rep_msg = 'Would you like to search for something else?'
     repeat("repeat", rep_msg, search)
+
+
+def repeat(fun, msg, rep):
+    """
+    Repeat function based on user input.
+    If input is yes repeat function, else return to menu.
+    """
+
+    if fun == "view":
+        print('''\nWould you like to return to the menu?
+        If yes please type y, and if no type n.''')
+        view_a = input("\nPlease enter y/n:")
+
+        if view_a.lower() == "y":
+            menu()
+        elif view_a.lower() == "n":
+            close_program()
+    else:
+        print(f'\n{msg}')
+        answer = input("\nPlease enter y/n:")
+
+        if answer.lower() == "y":
+            rep()
+        elif answer.lower() == "n":
+            clear_screen()
+            menu()
