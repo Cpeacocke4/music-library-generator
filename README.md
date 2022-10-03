@@ -5,7 +5,7 @@ This application is targeted towards a user who would like to compile, organise 
 
 Welcome to [The Music Library Generator](https://cpeacocke4.github.io/avatar-quiz/)
 
-![Mock-up of The Ultimate Avatar Quiz on various devices](assets/README-images/mock-up.png)
+![Mock-up of Music Library Generator](/README_images/mockup.png)
 
 ## **Contents** 
 
@@ -47,24 +47,24 @@ Upon completion of every function, the user is asked whether they would like to 
 
 * The menu was created to clearly and simply define the functionalities available to the user, and request an input from the user to choose between the 6 menu items. Upon user input the function to run the respective menu item is called.
 
-![Screenshot of nav bar](assets/README-images/logo.png) 
+![Screenshot of menu](/README_images/menu.png) 
 
 ### • **View Library** 
 * The View Library function allows the user to see the existing library of music in an alphabetically ordered, clear and neatly layed out format.
 
 
-![Screenshot of hero image](assets/README-images/welcome-screen.png)
+![Screenshot of view library function](/README_images/view_library.png)
 
 ### • **Add Song** 
 * The add song function requests 3 fields of input from the user: song, artist, and genre. It validates the input by checking for the correct number of input fields, and whether the input already exists within the library. Upon succesful validation the input is then updated to the library, and the user is notified.
 
 
-![Screenshot of ethos section](assets/README-images/question-screen.png)
+![Screenshot of add song function](/README_images/add_song.png)
 
 ### • **Delete Song** 
 * The delete song function requests input from the user detailing the song they would like to delete. It validates the input by checking whether the song exists within the library already, and whether there is input present. Upon succesful validation the entry is deleted from the library, and the user is notified.
 
-![Screenshot of times section](assets/README-images/result-screen.png)
+![Screenshot of delete song function](/README_images/delete_song.png)
 
 ### • **Update Entry** 
 

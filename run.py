@@ -19,10 +19,6 @@ SHEET = GSPREAD_CLIENT.open("music_library_generator")
 
 library = SHEET.worksheet("Library")
 
-data = library.get_all_records()
-
-songs = library.col_values(1)
-
 
 def menu():
     """
@@ -102,6 +98,7 @@ def add_song():
     Add new song to sheet and order alphabetically.
     """
     clear_screen()
+    songs = library.col_values(1)
 
     while True:
         print('''Please enter your song separated with commas
@@ -132,6 +129,7 @@ def delete_song():
     Access song in record with user input and delete from record.
     """
     clear_screen()
+    songs = library.col_values(1)
 
     while True:
         deleted_song = input("Enter the song you would like to delete here:\n")
@@ -163,6 +161,7 @@ def update_song():
     Find song, artist and genre in library and update with user input.
     """
     clear_screen()
+    songs = library.col_values(1)
 
     print('''If you would like to update an entry,
     please type in the song name below.\n''')
