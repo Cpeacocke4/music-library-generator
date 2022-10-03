@@ -5,7 +5,7 @@ This application is targeted towards a user who would like to compile, organise 
 
 Welcome to [The Music Library Generator](https://cpeacocke4.github.io/avatar-quiz/)
 
-![Mock-up of Music Library Generator](/README_images/mockup.png)
+![Mock-up of Music Library Generator](/README_media/mockup.png)
 
 ## **Contents** 
 
@@ -47,42 +47,42 @@ Upon completion of every function, the user is asked whether they would like to 
 
 * The menu was created to clearly and simply define the functionalities available to the user, and request an input from the user to choose between the 6 menu items. Upon user input the function to run the respective menu item is called.
 
-![Screenshot of menu](/README_images/menu.png) 
+![Screenshot of menu](/README_media/menu.png) 
 
 ### • **View Library** 
 * The View Library function allows the user to see the existing library of music in an alphabetically ordered, clear and neatly layed out format.
 
 
-![Screenshot of view library function](/README_images/view_library.png)
+![Screenshot of view library function](/README_media/view_library.png)
 
 ### • **Add Song** 
 * The add song function requests 3 fields of input from the user: song, artist, and genre. It validates the input by checking for the correct number of input fields, and whether the input already exists within the library. Upon succesful validation the input is then updated to the library, and the user is notified.
 
 
-![Screenshot of add song function](/README_images/add_song.png)
+![Screenshot of add song function](/README_media/add_song.png)
 
 ### • **Delete Song** 
 * The delete song function requests input from the user detailing the song they would like to delete. It validates the input by checking whether the song exists within the library already, and whether there is input present. Upon succesful validation the entry is deleted from the library, and the user is notified.
 
-![Screenshot of delete song function](/README_images/delete_song.png)
+![Screenshot of delete song function](/README_media/delete_song.png)
 
 ### • **Update Entry** 
 
 * The Update entry function requests input from the user detailing the song they would like to update. It validates the input by checking whether the song exists within the library, and whether there is input present. Upon succesful validation the row with the song, artist and genre is accessed and printed for the user, and the user is asked to input the update in 3 fields, song, artist and genre. Upon succesful validation of the second input, the library is updated and the user is notified.
 
-![Screenshot of update song function](/README_images/update.png)
+![Screenshot of update song function](/README_media/update.png)
 
 ### • **Search** 
 
 * The Search function requests input from the user detailing either a song, genre or artist. It validates the input by checking whether the input exists within the library, and whether there is any input present. Upon succesful validation the search results are printed in a clear and organised format for the user.
 
-![Screenshot of search function](/README_images/search.png)
+![Screenshot of search function](/README_media/search.png)
 
 ### • **Close Program** 
 
 * The Close Program function prints a goodbye message and closes the program upon the users request.
 
-![Screenshot of close program function](/README_images/close.png)
+![Screenshot of close program function](/README_media/close.png)
 
 ### • **Input Validation**
 
