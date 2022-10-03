@@ -68,3 +68,25 @@ def menu():
         elif int(menu_input) == 6:
             close_program()
         break
+
+
+def view_library():
+    """
+    Get all data from library, organise, and print for user.
+    """
+    clear_screen()
+    data = library.get_all_records()
+    print('Loading your library please wait...\n')
+    print('Library loaded!\n')
+
+    new_rows = []
+    for items in data:
+
+        rows = list(items.values())
+        new_rows.append(rows)
+
+    sorted_rows = sorted(new_rows, key=lambda x:x[0])
+    print(tabulate(sorted_rows, headers=['Song Title', 'Artist', 'Genre']))
+
+    rep_msg = 'Would you like to return to the menu?'
+    repeat("view", rep_msg, view_library)
