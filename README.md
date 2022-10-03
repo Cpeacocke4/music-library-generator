@@ -70,13 +70,19 @@ Upon completion of every function, the user is asked whether they would like to 
 
 * The Update entry function requests input from the user detailing the song they would like to update. It validates the input by checking whether the song exists within the library, and whether there is input present. Upon succesful validation the row with the song, artist and genre is accessed and printed for the user, and the user is asked to input the update in 3 fields, song, artist and genre. Upon succesful validation of the second input, the library is updated and the user is notified.
 
+![Screenshot of update song function](/README_images/update.png)
+
 ### • **Search** 
 
 * The Search function requests input from the user detailing either a song, genre or artist. It validates the input by checking whether the input exists within the library, and whether there is any input present. Upon succesful validation the search results are printed in a clear and organised format for the user.
 
+![Screenshot of search function](/README_images/search.png)
+
 ### • **Close Program** 
 
 * The Close Program function prints a goodbye message and closes the program upon the users request.
+
+![Screenshot of close program function](/README_images/close.png)
 
 ### • **Input Validation**
 
