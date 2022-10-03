@@ -124,3 +124,34 @@ def add_song():
 
     rep_msg = 'Would you like to add another song?'
     repeat("add", rep_msg, add_song)
+
+
+def delete_song():
+    """
+    Access song in record with user input and delete from record.
+    """
+    clear_screen()
+
+    while True:
+        deleted_song = input("Enter the song you would like to delete here:\n")
+        current_songs = []
+        for song in songs:
+            current_songs.append(song)
+        if deleted_song.lower() == '':
+            print('Your search was invalid, please try again\n')
+            continue
+        if deleted_song.lower() not in current_songs:
+            print(f'''{deleted_song} does not exist
+            in your library, please request another song.\n''')
+            continue
+        print(f'You requested to delete {deleted_song}.')
+        if deleted_song.lower() in songs:
+            cell = library.find(deleted_song.lower())
+            deleted_row = cell.row
+            library.delete_rows(deleted_row)
+        print('Your entry has been deleted!\n')
+        print('Library successfully updated!')
+        break
+
+    rep_msg = 'Would you like to delete another entry?'
+    repeat("delete", rep_msg, delete_song)
