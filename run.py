@@ -263,3 +263,19 @@ def repeat(fun, msg, rep):
         elif answer.lower() == "n":
             clear_screen()
             menu()
+
+
+def close_program():
+    """Exit commandline upon user request."""
+    clear_screen()
+
+    print('''Program closing shortly. \nThank you for coming!''')
+    sys.exit()
+
+
+def clear_screen():
+    """Clear terminal upon calling of function."""
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+menu()
