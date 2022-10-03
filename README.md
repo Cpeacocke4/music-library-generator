@@ -170,7 +170,7 @@ In this section all code that was referenced from external sources will be credi
 #### • **Code**
 
 * Code connecting the google sheets API to the run.py file was referenced from the [Code Institute](https://codeinstitute.net/se/) Love Sandwiches Project
-* Code to clear the screen was sourced from [this website[](https://teamtreehouse.com/community/using-a-clearscreen-in-pycharm)
+* Code to clear the screen was sourced from [this website](https://teamtreehouse.com/community/using-a-clearscreen-in-pycharm)
 * Typeography for the heading was sourced from [this website](http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=The%20music%0Alibrary%0Agenerator%0A)
 
 [Back to Top](#the-music-library-generator)
