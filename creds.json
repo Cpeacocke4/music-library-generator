@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "musiclibrarygenerator",
+    "private_key_id": "dd0df31bb104a699c9f1982aa51650afe7ded7a7",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCp3tkUEJaepxEW\nPEVwoLkhrNPxr2iOwTCH3Y7PBA7Mew8ABECwJ/AUDwuVZYOHrLg37Q+h94IsauNe\nK7ZM1m0pnljuHV4BEtPyDDoPkb9Ij/Bh/ZFPdA7eiiZuZBppWQIvvXGUCe5ld5f2\nfBNFnRA69+KMLtleCfxT7gIJMduvc/wuMEyYtgEhyKAGvQFDPUofWdpI/tIgD+xq\nnatpFJ7hob7WOK6CjsQOq0n5zA0lqnf/uOQBgvgxMru+M6VKUjK625yHmh/ipd8W\nsnGxrw7CkdUWBJsGi+j8t2gdf9ZslUhNPmeEBn85joQ8IgLOiutmUCX9mRZhOuZb\n5EFRKItDAgMBAAECggEACthHU5ibhRV1ac3/QOmB6Dx4a32fVz3OM15Zt62ypCtX\nEdEzsAtcsGsleiw48Xh9alSgIt8CWIOacHCp+s3Vukp5svn8/mSNU26kZkoPxDos\nRpVBqajnKh33xiRt6zvbf+DAV4sqxR+VfA7/y/nzB1C8DecPyYkpqtIPHzcnp1PN\nk4VRZdx9ZVDnedx9z0SucfBmJL+nwagDQHspvGfyKhNMYakHQSwsmFo8bE/UYS4q\n2ZmqPGssMYl5GkMP5Z6hCEQVKbhzVp2LFMIrhCUdP+dA0aWmdCx+dR6eGRfcjAN6\n4fsUAKYKKf03AIZp4AGMYCTf4uIbYo5zQgEwuhT2wQKBgQDjeHOJ5AJH/EoldwUW\nfXb1lGGqocdtQbX0J/xAzUfdV/fMd6QGkjVPV2ttukZXgHhv6nzNDMH+bnCjpCLj\nyYXDzuv/XowND8ne0KR9Xli23qLdfndpRJ5tJPc5rTz/lbqR9fqcLcC/1QCJG0gR\nR+YYGLIB3b+uCG//qwNvvBnSfwKBgQC/LP6KOICeHUbftx+1MFRrogvCrD7zOmN1\nibPhlFrLNCjRRUk4M7A7K1QgYA65AofvIiyuUuSrpQrdn+3e1Jcpe4gAK6X+Uo+J\nrYD3XZPu1XaCjOBmgpqZmkE1Txnd8cY4suxM0nnzRrvuij+b9oay5MquqcL/T96d\nPZPNd1cdPQKBgQDPumsAzMlMhdgMeLGbxT4CrNu4IH9nhi+s5WsWnqD3QONZxRR0\nr8ahSzse/JJKTFcwFRqdgv4R5TdWKYl3LczLcUbRcb1CHF4E7dKZbrRjY9OlpF1W\nM8Td9XkUIeFnoou7yb9wKtQwG0ue6dwZc+hrrvm4fJIUUz48ZCcCPevy7wKBgQCz\nWNiqfvtaWgjlU3xxlJd+KhVyWfjsYbhwyfBxDaZnv9UTDjb0fLk1qR5RCQyG0DMK\nSjs0hxtzU2/wHlsfkr0E85jQ4CHnhziVZqn4Zlej1apKKzNRt/ClbSsDgeO4bVsS\nUfiQ0VwKuC8SR6wI+qu/JBho52XB8wHa7au9M9oL2QKBgCcvoKPbP93QzOv+Vqsd\nmZXW6kPtKoPqtLUkHlOpD7KaBSdwQEt0oDMZNecp/pziVymsAXeBGuItxWI/9Fi5\nSOhMo5m8+nVHs/Y+FPIIakyTbXhOyUxF4hdsXA0EKRG3MBSro7MryUc5/qA4SrgR\nStsr4VIrjCtUMhD2cX9r7jj4\n-----END PRIVATE KEY-----\n",
+    "client_email": "musiclibrarygenerator@musiclibrarygenerator.iam.gserviceaccount.com",
+    "client_id": "110829221033427715540",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/musiclibrarygenerator%40musiclibrarygenerator.iam.gserviceaccount.com"
+  }
