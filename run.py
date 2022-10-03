@@ -23,6 +23,7 @@ data = library.get_all_records()
 
 songs = library.col_values(1)
 
+
 def menu():
     """
     Print menu options to user and request answer with the
@@ -85,7 +86,7 @@ def view_library():
         rows = list(items.values())
         new_rows.append(rows)
 
-    sorted_rows = sorted(new_rows, key=lambda x:x[0])
+    sorted_rows = sorted(new_rows, key=lambda x: x[0])
     print(tabulate(sorted_rows, headers=['Song Title', 'Artist', 'Genre']))
 
     rep_msg = 'Would you like to return to the menu?'
